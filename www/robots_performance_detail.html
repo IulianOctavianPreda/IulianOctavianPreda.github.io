@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Robots performance detail</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/ang.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="header-wrapper container-flex flex-align-center">
+            <header class="container-flex flex-align-center top-bar">
+                <div class="container-flex top-bar-content">
+                    <span class="container-flex flex-align-center" onclick="goBack()"><img src="images/menu-arrow.png" class="top-bar-img"></span>
+                    <span class="title container-flex flex-align-center"><h1 class="title-details">Robots performance <br class="break-point">detail</h1><h1 class="title-variable">Robot/s selected</h1></span>
+                </div>
+                <span>
+                    <div tabindex="0" class="onclick-menu">
+                        <img src="images/menu.png" class="top-bar-img">
+                        <div class="onclick-menu-content container-flex flex-align-center">
+                            <span>Profile</span>
+                            <a href="login.html"><span>Logout</span></a>
+                            <span>Settings</span>
+                        </div>
+                    </div>
+                </span>
+            </header>
+        </div>
+
+        <div class="content-wrapper container-flex flex-align-center">
+            <div class="interior-wrapper container-flex flex-align-center">
+                <div class="show-overview full-width">
+                        <span onclick="openNav()">
+                            <img src="../www/images/open-overview.png" class="open-img">
+                        </span>
+                </div>
+                <div class="left-side-wrapper container-flex flex-align-center">
+                    
+                    <div class="robot-overview full-width detail-page">
+                        <div class="robot-details full-width">
+                            <div class="close-overview full-width">
+                                <span class=" float-right" onclick="closeNav()">
+                                    <img src="../www/images/close-overview.png" class="close-img">
+                                </span>
+                            </div>
+                            <div class="full-width">
+                                <h3>Choose program</h3>
+                            </div>
+                            <div class="program-wrapper container-flex full-width">
+                                <select class="form" id="dep" onchange="changeGraph(this.selectedIndex)">
+                                    <option value="1">66S261D</option>
+                                    <option value="2">66S273A</option>
+                                    <option value="3">66S241A</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        
+                        <div class="robot-date full-width">
+                            <div class="full-width">
+                                <h3>Choose date interval</h3>
+                            </div>
+                            <div class="robot-date-from container-flex full-width">
+                                <label for="date1">From</label>
+                                <input class="form" type="date" name="dateone" id="date1" >
+                            </div>
+                            <div class="robot-date-to container-flex full-width">
+                                <label for="date2">To</label>
+                                <input class="form" type="date" name="datetwo" id="date2">
+                            </div>
+                        </div>
+                        <div class="full-width"><button class="robots-button float-right">Start</button></div>
+                    </div>
+                </div>
+                <div class="right-side-wrapper container-flex flex-align-center">
+                    <div class="note-wrapper full-width">
+                        <div class="note float-right container-flex flex-align-center">
+                            <span class="note-text full-width"><h2>Average</h2></span>
+                            <span class="note-text full-width"><h1 id="sVar">152</h1></span>
+                            <span class="note-text full-width"><h2>operations per hour</h2></span>
+                        </div>
+                    </div>
+                    <div class="graph-wrapper full-width">
+                        <img src="../ui_prototypes/66S261D.png" class="performance-img float-right" id="graph-change">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<script type="text/javascript" src="javascript/main.js"></script>-->
+</body>
+
+</html>
