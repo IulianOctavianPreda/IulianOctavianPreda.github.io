@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 <head>
     <title>Robots performance detail</title>
     <link rel="stylesheet" href="styles/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="js/ang.js"></script>
 </head>
 
-<body>
+<body ng-app="mainApp">
     <div class="page-wrapper">
         <div class="header-wrapper container-flex flex-align-center">
             <header class="container-flex flex-align-center top-bar">
                 <div class="container-flex top-bar-content">
-                    <span class="container-flex flex-align-center" onclick="goBack()"><img src="images/menu-arrow.png" class="top-bar-img"></span>
+                    <span class="container-flex flex-align-center">
+                        <a href="robots_performance.html">
+                        <img src="images/menu-arrow.png" class="top-bar-img-arrow">
+                        </a>
+                    </span>
                     <span class="title container-flex flex-align-center"><h1 class="title-details">Robots performance <br class="break-point">detail</h1><h1 class="title-variable">Robot/s selected</h1></span>
                 </div>
                 <span>
                     <div tabindex="0" class="onclick-menu">
-                        <img src="images/menu.png" class="top-bar-img">
-                        <div class="onclick-menu-content container-flex flex-align-center">
+                        <img src="images/menu.png" class="top-bar-img-burger">
+                        <div class="onclick-menu-content container-flex flex-align-center cener">
                             <span>Profile</span>
                             <a href="login.html"><span>Logout</span></a>
                             <span>Settings</span>
@@ -28,10 +31,10 @@
             </header>
         </div>
 
-        <div class="content-wrapper container-flex flex-align-center">
+        <div class="content-wrapper container-flex flex-align-center" ng-controller="mainCtrl">
             <div class="interior-wrapper container-flex flex-align-center">
                 <div class="show-overview full-width">
-                        <span onclick="openNav()">
+                        <span ng-click="openNav()">
                             <img src="../www/images/open-overview.png" class="open-img">
                         </span>
                 </div>
@@ -40,23 +43,24 @@
                     <div class="robot-overview full-width detail-page">
                         <div class="robot-details full-width">
                             <div class="close-overview full-width">
-                                <span class=" float-right" onclick="closeNav()">
+                                <span class=" float-right" ng-click="closeNav()">
                                     <img src="../www/images/close-overview.png" class="close-img">
                                 </span>
                             </div>
-                            <div class="full-width">
-                                <h3>Choose program</h3>
-                            </div>
-                            <div class="program-wrapper container-flex full-width">
-                                <select class="form" id="dep" onchange="changeGraph(this.selectedIndex)">
-                                    <option value="1">66S261D</option>
-                                    <option value="2">66S273A</option>
-                                    <option value="3">66S241A</option>
-                                </select>
-                            </div>
+                                <div class="choose_program_desktop" class="full-width">
+                                <div class="full-width">
+                                    <h3>Choose program</h3>
+                                </div>
+                                <div class="program-wrapper container-flex full-width">
+                                    <select class="form" id="dep" onchange="changeGraph(this.selectedIndex)">
+                                        <option value="1">66S261D</option>
+                                        <option value="2">66S273A</option>
+                                        <option value="3">66S241A</option>
+                                    </select>
+                                </div>
 
+                            </div>
                         </div>
-                        
                         <div class="robot-date full-width">
                             <div class="full-width">
                                 <h3>Choose date interval</h3>
@@ -74,7 +78,23 @@
                     </div>
                 </div>
                 <div class="right-side-wrapper container-flex flex-align-center">
+                   <div class="choose_program_mobile full-width container-flex flex-align-center">
+                             <div>
+                                <div class="full-width center">
+                                    <h3>Choose program</h3>
+                                </div>
+                                <div class="program-wrapper container-flex full-width">
+                                    <select class="form" id="dep" onchange="changeGraph(this.selectedIndex)">
+                                        <option value="1">66S261D</option>
+                                        <option value="2">66S273A</option>
+                                        <option value="3">66S241A</option>
+                                    </select>
+                                </div>
+                                </div>
+                    </div>
+
                     <div class="note-wrapper full-width">
+                         
                         <div class="note float-right container-flex flex-align-center">
                             <span class="note-text full-width"><h2>Average</h2></span>
                             <span class="note-text full-width"><h1 id="sVar">152</h1></span>
@@ -89,6 +109,11 @@
         </div>
     </div>
     <!--<script type="text/javascript" src="javascript/main.js"></script>-->
+    
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js">
+    </script>
+    <script src="js/ang.js"></script>
+    
 </body>
-
 </html>

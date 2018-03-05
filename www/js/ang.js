@@ -1,25 +1,5 @@
 
-    var showButton = document.getElementsByClassName("show-overview");
-    var closeButton = document.getElementsByClassName("close-overview");
-    var overview = document.getElementsByClassName("left-side-wrapper");
-    var rightShow = document.getElementsByClassName("right-side-wrapper");
-
-    function openNav() {
-        overview[0].classList.add("script-class");
-        showButton[0].style.display="none";
-        rightShow[0].style.display="none";
-    }
-
-    function closeNav() {
-        overview[0].classList.remove("script-class");
-        showButton[0].style.display="block";
-        rightShow[0].style.display="flex";
-    }
-    function goBack() {
-    window.history.back();
-    }
-
-     function changeGraph(opt){
+    function changeGraph(opt){
         if(opt == 0){
             document.getElementById("sVar").textContent="152";
             document.getElementById("graph-change").src="../ui_prototypes/66S261D.png";
@@ -32,3 +12,34 @@
         }
         
     }
+
+
+var app = angular.module('mainApp', []);
+app.controller('mainCtrl', function($scope) {
+    
+    $scope.logoutVisible = false;
+    
+    $scope.loggedOut = function() {
+        $scope.logoutVisible = true;
+    }
+    
+    
+    
+    var openOverview = angular.element(document.querySelector(".show-overview"));
+    var closeOverview = angular.element(document.querySelector(".close-overview"));
+    var leftSide = angular.element(document.querySelector(".left-side-wrapper"));
+    var rightSide = angular.element(document.querySelector(".right-side-wrapper"));
+    
+    $scope.openNav = function() {
+        leftSide.addClass("script-left-class");
+        openOverview.addClass("script-class");
+        rightSide.addClass("script-right-class");   
+    }
+    
+    $scope.closeNav = function() {
+        leftSide.removeClass("script-left-class");
+        openOverview.removeClass("script-class");
+        rightSide.removeClass("script-right-class");
+    }
+    
+});

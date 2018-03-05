@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html ng-app>
+<html>
 <head>
     <title>Login page</title>
     <link rel="stylesheet" href="styles/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body ng-app="mainApp">
     <div class="page-wrapper container-flex flex-align-center-login">
         <div class="login-wrapper">
-            <div class="container-flex container-login">
+            <div class="container-flex container-login" ng-controller="mainCtrl">
 
                 <div class="login-text-wrapper">Login</div>
 
@@ -34,11 +34,12 @@
 
                 <div class="log-in-button-wrapper">
                     <a href="robots_statistics.html">
+                    <!-- <button class="log-in-button float-right" ng-click="loggedOut()">Log in</button> -->
                     <button class="log-in-button float-right">Log in</button>
                     </a>
                 </div>
 
-                <div class="successfully-logged-out">
+                <div class="successfully-logged-out" ng-show="logoutVisible">
                     You have been successfully logged out
                 </div>
 
@@ -46,5 +47,14 @@
         </div>
     </div>
     <!--<script type="text/javascript" src="javascript/main.js"></script>-->
+    
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js">
+    </script>
+    <script src="js/ang.js"></script>
+    
 </body>
 </html>
+    
+    
+    
