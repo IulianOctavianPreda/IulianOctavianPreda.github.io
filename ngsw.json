@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1592662720399,
+  "timestamp": 1593459302401,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -8,14 +8,14 @@
       "installMode": "prefetch",
       "updateMode": "prefetch",
       "urls": [
-        "/4.677081da389d4dc92a39.js",
+        "/4.8e66183461f2c3154ccc.js",
         "/favicon.ico",
         "/index.html",
-        "/main.365467266edf27a2f9aa.js",
+        "/main.f6e15f2c4de72fba5e6d.js",
         "/manifest.webmanifest",
         "/polyfills.5a3a33cbe3e83802f913.js",
-        "/runtime.add30737936e1ed567ce.js",
-        "/styles.4e2241f6a67bccb3ea74.css"
+        "/runtime.c50d5c226cd274574e21.js",
+        "/styles.2e36602862494db1441d.css"
       ],
       "patterns": []
     },
@@ -31,14 +31,18 @@
         "/assets/icons/icon-384x384.png",
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png"
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/mesh-node-black-light.svg",
+        "/assets/images/mesh-node-black.svg",
+        "/assets/images/mesh-node-clear-light.svg",
+        "/assets/images/mesh-node-clear.svg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/4.677081da389d4dc92a39.js": "fe7ffad10299e1196c7ccba8b1633e1118524500",
+    "/4.8e66183461f2c3154ccc.js": "50e624c33e4266c239cbff1149f4182a22775a15",
     "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -47,13 +51,17 @@
     "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/images/mesh-node-black-light.svg": "3f8b476d95cace37ee90e8d790acb022c1a6768e",
+    "/assets/images/mesh-node-black.svg": "df08f51af46441491ec77c0f1de6b85bee8b4a69",
+    "/assets/images/mesh-node-clear-light.svg": "6d3413f66e968395e85831008ae98f24088a4d70",
+    "/assets/images/mesh-node-clear.svg": "a0dc09766e906752773e5d8d2cd5e316a43deff6",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "55aa52e9331ebe4b1e7a48501968174413096598",
-    "/main.365467266edf27a2f9aa.js": "994f84770c646e600ba9bd2a79f0b3e7b62f71df",
-    "/manifest.webmanifest": "f6becaf53b0180dcfecef788c59a4f2b3b2ce9f4",
+    "/index.html": "d4e63feef3519275082a3a02b5599918a2bac866",
+    "/main.f6e15f2c4de72fba5e6d.js": "71e80ec7077c8c5c7c2e48aa4961d3078bd25e85",
+    "/manifest.webmanifest": "afa43ee4a79fcf3e7720e5c5f9c37312b8c8d5d5",
     "/polyfills.5a3a33cbe3e83802f913.js": "1edd72ae1ef614d28e863fd116952ad4a2b29323",
-    "/runtime.add30737936e1ed567ce.js": "5192d07ce4b0dcea31d814f0fbccb5422665da70",
-    "/styles.4e2241f6a67bccb3ea74.css": "bfe8b1bb270d27c121efb3b7ce3b5cfdd47f6800"
+    "/runtime.c50d5c226cd274574e21.js": "00c26648ea4dcf7784ac7ba42dd837c7a3155015",
+    "/styles.2e36602862494db1441d.css": "9dc3bc474a8334406e6a612045e497da0efcf810"
   },
   "navigationUrls": [
     {
